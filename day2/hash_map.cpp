@@ -28,6 +28,6 @@ int main(){
     cout << m["mera"] << endl;
     cout << m.at("babbar") << endl;
 
-    cout << m.at("unknown")
+    cout << m.at("unknown") << endl;
     return 0;
 }
