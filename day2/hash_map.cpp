@@ -28,6 +28,26 @@ int main(){
     cout << m["mera"] << endl;
     cout << m.at("babbar") << endl;
 
+    // cout << m.at("unknown") << endl; // this will show arror that means this value pair not exist in map
+    cout << m["unknown"] << endl; //but this will search for that value pair if not exist then create with value 0
     cout << m.at("unknown") << endl;
+
+    //Size
+    cout << m.size() << endl;
+
+    //to check presence
+    cout << m.count("love") << endl; //if present then 1 if not then 0
+
+    //erase
+    m.erase("love");
+    cout << m.size() << endl;
+
+    //iterater
+    unordered_map<string,int> :: iterator it = m.begin();
+
+    while(it != m.end()){
+        cout << it->first << " " << it->second << endl;
+        it++;
+    }
     return 0;
 }
